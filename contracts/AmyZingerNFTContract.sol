@@ -15,7 +15,7 @@ error AmyZingerNFTContract__ValueNotEqualPrice();
 error AmyZingerNFTContract__WrongAvenueForThisTransaction();
 
 /// @custom:security-contact amy.zinger@hotmail.com
-contract AmyZinger is 
+contract AmyZingerNFTContract is 
 ERC721, 
 ERC721Enumerable, 
 ERC721URIStorage, 

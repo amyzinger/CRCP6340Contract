@@ -56,8 +56,8 @@ describe("AmyZingerNFTContract", async function () {
       const currentValue = await AmyZingerNFTContract.name();
       assert.equal(currentValue.toString(), expectedValue);
     });
-    it("should be have symbol DGS", async function () {
-      const expectedValue = "DGS";
+    it("should be have symbol AZ", async function () {
+      const expectedValue = "AZ";
       const currentValue = await AmyZingerNFTContract.symbol();
       assert.equal(currentValue.toString(), expectedValue);
     });
@@ -107,7 +107,7 @@ describe("AmyZingerNFTContract", async function () {
   describe("receive function", async function () {
     this.beforeEach(async function () {
         AmyZingerNFTContractFactory = await ethers.getContractFactory(
-        "DGSCreativeNFTContract"
+        "AmyZingerNFTContract"
       );
       AmyZingerNFTContract = await AmyZingerNFTContractFactory.deploy(
         args.mint_price,
