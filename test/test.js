@@ -1,3 +1,5 @@
+//don't run this unless hardhat.config.js is set to hardhat
+
 const { expect, assert } = require("chai");
 const { ethers } = require("hardhat");
 
